@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { useState } from "react";
-import { Github } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 const links = [
     {url: "/", title: "Acceuil"},
@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
             <div className=""></div>
-            <div className="md:hidden">
+            <div className="md:hidden lg:flex">
                 <Link
                 href="/"
                 className="text-2xl bg-black rounded-md p-1 font-semibold flex items-center justify-center"
@@ -31,9 +31,15 @@ const Navbar = () => {
                     <span className="w-15 h-10 rounded bg-white text-black flex items-center justify-center">.Honoré</span>
                 </Link>
             </div>
-            <div className="">
+            <div className="hidden md:flex gap-4">
                 <Link href={"https://github.com/Wheelee"}>
                 <Github size={40}/>
+                </Link>
+                <Link href={"https://github.com/Wheelee"}>
+                <Instagram size={40}/>
+                </Link>
+                <Link href={"https://github.com/Wheelee"}>
+                <Linkedin size={40}/>
                 </Link>
             </div>
             <div className="md:hidden">
