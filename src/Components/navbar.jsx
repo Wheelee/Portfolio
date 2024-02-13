@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
 
             {/*SOCIAL*/}
-            <div className="hidden md:flex gap-4 w-1/3">
+            <div className="hidden md:flex gap-6 w-1/3 ml-8">
                 <Link href={"https://github.com/Wheelee"}>
                 <Github size={40}/>
                 </Link>
