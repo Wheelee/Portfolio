@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useState } from "react";
 import { Github, Instagram, Linkedin } from "lucide-react";
 import NavLink from "./navLinks";
+import { usePathname } from "next/navigation";
 
 const links = [
     {url: "/", title: "Accueil"},
@@ -12,12 +13,15 @@ const links = [
 ];
 
 const Navbar = () => {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const pathname = usePathname();
     return (
         <div className='flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pt-6 text-xl'>
             <div className="hidden md:flex gap-4 w-1/3">
                 {links.map(links=>(
-                    <Link href={links.url} key={links.title}>{links.title}</Link>
+                    pathname === links.url ? <Link href={links.url} className="bg-black text-white rounded-md px-2 py-1" key={links.title}>{links.title}</Link>
+                    :  <Link href={links.url} key={links.title}>{links.title}</Link>
+                   
                 ))}
             </div>
 

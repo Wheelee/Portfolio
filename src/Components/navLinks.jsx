@@ -10,7 +10,7 @@ console.log(pathName)
 
 
     return (
-        <Link classname='rounded p-1 ${pathName === link.url && "bg-black text-white"}' href={link.url}></Link>
+        <Link classname={'rounded p-1 ${pathName === link.url && "bg-black text-white"}'} href={link.url}></Link>
         )
     }
     
