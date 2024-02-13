@@ -40,13 +40,13 @@ const Navbar = () => {
             {/*SOCIAL*/}
             <div className="hidden md:flex gap-6 w-1/3 ml-8">
                 <Link href={"https://github.com/Wheelee"}>
-                <Github size={40}/>
+                <Github size={30}/>
                 </Link>
                 <Link href={"https://github.com/Wheelee"}>
-                <Instagram size={40}/>
+                <Instagram size={30}/>
                 </Link>
                 <Link href={"https://github.com/Wheelee"}>
-                <Linkedin size={40}/>
+                <Linkedin size={30}/>
                 </Link>
             </div>
 
