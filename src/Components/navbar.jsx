@@ -2,10 +2,11 @@
 import Link from "next/link"
 import { useState } from "react";
 import { Github, Instagram, Linkedin } from "lucide-react";
+import NavLink from "./navLinks";
 
 const links = [
     {url: "/", title: "Acceuil"},
-    {url: "/Details", title: "A propos"},
+    {url: "/Details", title: "Plus"},
     {url: "/Portfolio", title: "Portfolio"},
     {url: "/Contact", title: "Contacter"},
 ];
@@ -13,16 +14,16 @@ const links = [
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className='flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pt-6'>
-            <div className="hidden md:flex gap-4">
+        <div className='flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pt-6 text-xl'>
+            <div className="hidden md:flex gap-4 w-1/3">
                 {links.map(links=>(
                     <Link href={links.url} key={links.title}>{links.title}</Link>
                 ))}
             </div>
 
-
-            <div className=""></div>
-            <div className="md:hidden lg:flex">
+            
+            {/*LOGO*/}
+            <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
                 <Link
                 href="/"
                 className="text-2xl bg-black rounded-md p-1 font-semibold flex items-center justify-center"
@@ -31,7 +32,9 @@ const Navbar = () => {
                     <span className="w-15 h-10 rounded bg-white text-black flex items-center justify-center">.Honoré</span>
                 </Link>
             </div>
-            <div className="hidden md:flex gap-4">
+
+            {/*SOCIAL*/}
+            <div className="hidden md:flex gap-4 w-1/3">
                 <Link href={"https://github.com/Wheelee"}>
                 <Github size={40}/>
                 </Link>
@@ -42,6 +45,8 @@ const Navbar = () => {
                 <Linkedin size={40}/>
                 </Link>
             </div>
+
+            {/*MENU*/}
             <div className="md:hidden">
                 <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={() =>setOpen((prev) => !prev)}>
                     <div className="w-10 h-1 bg-white rounded"></div>
@@ -53,9 +58,7 @@ const Navbar = () => {
                 {open && (
                     <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl">
                     {links.map((link) => (
-                        <Link href={link.url} key={link.title}> 
-                            {link.title}
-                        </Link>
+                        <NavLink link={link} key={link.title}/>
                     ))}
                 </div>
                 )}
