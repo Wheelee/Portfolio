@@ -14,14 +14,14 @@ const links = [
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const pathname = usePathname();
+    const pathName = usePathname(); 
     return (
         <div className='flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 pt-6 text-xl'>
+            {/*LINKS*/}
             <div className="hidden md:flex gap-4 w-1/3">
-                {links.map(links=>(
-                    pathname === links.url ? <Link href={links.url} className="bg-black text-white rounded-md px-2 py-1" key={links.title}>{links.title}</Link>
-                    :  <Link href={links.url} key={links.title}>{links.title}</Link>
-                   
+                {links.map((link) =>(
+                    pathName === link.url ? <Link href={link.url} className="bg-black text-white rounded-md px-2 py-1" key={link.title}>{link.title}</Link>
+                    : <NavLink link={link} key={link.title}/>
                 ))}
             </div>
 
