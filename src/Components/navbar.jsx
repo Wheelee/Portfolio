@@ -5,7 +5,7 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 import NavLink from "./navLinks";
 
 const links = [
-    {url: "/", title: "Acceuil"},
+    {url: "/", title: "Accueil"},
     {url: "/Details", title: "Plus"},
     {url: "/Portfolio", title: "Portfolio"},
     {url: "/Contact", title: "Contacter"},
