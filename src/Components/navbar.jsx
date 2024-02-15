@@ -42,7 +42,7 @@ const Navbar = () => {
                 <Link href={"https://github.com/Wheelee"}>
                 <Github size={30}/>
                 </Link>
-                <Link href={"https://github.com/Wheelee"}>
+                <Link href={"https://www.instagram.com/tere_.hnr/"}>
                 <Instagram size={30}/>
                 </Link>
                 <Link href={"https://github.com/Wheelee"}>

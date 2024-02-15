@@ -5,15 +5,15 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const Type = () => {
     return (
-        <h1>Bah mon Portfolio il est <Typewriter
-            words={['Beau', 'Superbe', 'Tip top', 'Bonne !']}
+        <span>My Portfolio is <span className="font-bold"><Typewriter
+            words={['Beautiful !', 'Amazing !', 'Incredible !', 'Sexy !']}
             loop={false}
             cursor
             cursorStyle='_'
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={3000}
-        /></h1>
+        /></span></span>
     )
 }
 
