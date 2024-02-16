@@ -26,19 +26,24 @@ const DetailsPage = () => {
                         <div className="flex flex-col gap-12 justify-center">
                             <h1 className="font-bold text-2xl">Skills</h1>
                             {/*SKILLS LIST*/}
-                            <div className="flex flex-row w-fit">
+                            <div className="flex flex-wrap w-fit gap-4">
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">HTML/CSS</div>
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Java</div>
+                                <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">JavaScript</div>
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">PHP</div>
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">NextJS</div>
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">SQL</div>
+                                <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Tailwind CSS</div>
                             </div>
                             {/*SKILLS SCROLL SVG*/}
+                        <div className="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-big-down-dash"><path d="M15 5H9" /><path d="M15 9v3h4l-7 7-7-7h4V9z" /></svg>
+                        </div>
                         </div>
                     </div>
-                    <div className="">
+                    <div className="flex flex-col gap-12 justify-center">
                         {/*EXPERIENCE*/}
-                        EXPERIENCE
+                        <h1 className="font-bold text-2xl">Expérience</h1>
                     </div>
                 </div>
                 {/*SVG CONTAINER*/}
