@@ -41,9 +41,34 @@ const DetailsPage = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-12 justify-center">
+                    <div className="flex flex-col gap-12 justify-center pb-48">
                         {/*EXPERIENCE*/}
                         <h1 className="font-bold text-2xl">Expérience</h1>
+                        {/*EXPERIENCE LIST*/}
+                        <div className="">
+                            {/*EXPERIENCE LIST ITEMS*/}
+                        </div>
+                        <div className="">
+                            {/*LEFT*/}
+                            <div className="">
+                                {/*JOB TITLE*/}
+                                <div className="">Etudiant à La Croix Rouge, Brest</div>
+                                {/*JOB DESC*/}
+                                <div className="">Bah j'étudiais quoi fin normal</div>
+                                {/*JOB DATE*/}
+                                <div className="">2018 - 2023</div>
+                            </div>
+                            {/*CENTER*/}
+                            <div className="">
+                                {/*LINE*/}
+                                <div className="">
+                                    {/*CIRCLE*/}
+                                    <div className=""></div>
+                                </div>
+                            </div>
+                            {/*RIGHT*/}
+                            <div className=""></div>
+                        </div>
                     </div>
                 </div>
                 {/*SVG CONTAINER*/}
