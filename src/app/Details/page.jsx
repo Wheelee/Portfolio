@@ -36,38 +36,41 @@ const DetailsPage = () => {
                                 <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Tailwind CSS</div>
                             </div>
                             {/*SKILLS SCROLL SVG*/}
-                        <div className="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-big-down-dash"><path d="M15 5H9" /><path d="M15 9v3h4l-7 7-7-7h4V9z" /></svg>
-                        </div>
+                            <div className="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-big-down-dash"><path d="M15 5H9" /><path d="M15 9v3h4l-7 7-7-7h4V9z" /></svg>
+                            </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-12 justify-center pb-48">
                         {/*EXPERIENCE*/}
                         <h1 className="font-bold text-2xl">Expérience</h1>
                         {/*EXPERIENCE LIST*/}
-                        <div className="">
+                        <div className="flex justify-between h-48">
                             {/*EXPERIENCE LIST ITEMS*/}
-                        </div>
-                        <div className="">
-                            {/*LEFT*/}
-                            <div className="">
-                                {/*JOB TITLE*/}
-                                <div className="">Etudiant à La Croix Rouge, Brest</div>
-                                {/*JOB DESC*/}
-                                <div className="">Bah j'étudiais quoi fin normal</div>
-                                {/*JOB DATE*/}
-                                <div className="">2018 - 2023</div>
-                            </div>
-                            {/*CENTER*/}
-                            <div className="">
-                                {/*LINE*/}
+                            <div className="w-1/3">
+                                {/*LEFT*/}
                                 <div className="">
-                                    {/*CIRCLE*/}
-                                    <div className=""></div>
+                                    {/*JOB TITLE*/}
+                                    <p className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">Etudiant à La Croix Rouge, Brest</p>
+                                    {/*JOB DESC*/}
+                                    <p className="p-3 text-sm italic">Bah j'étudiais quoi fin normal</p>
+                                    {/*JOB DATE*/}
+                                    <p className="p-3 text-red-400 text-sm font-semibold">2018 - 2023</p>
+                                    {/*JOB COMPANY*/}
+                                    <p className="p-1 rounded bg-white text-sm font-semibold w-fit">Bilbo's Corp</p>
                                 </div>
-                            </div>
-                            {/*RIGHT*/}
-                            <div className=""></div>
+                                {/*CENTER*/}
+                                <div className="w-1/6">
+                                    azeazeaze
+                                    {/*LINE*/}
+                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                        {/*CIRCLE*/}
+                                        <div className="absolute"></div>
+                                    </div>
+                                </div>
+                                {/*RIGHT*/}
+                                <div className="w-1/3 bg-blue-800">aeazeazeaze</div>
+                            </div>  
                         </div>
                     </div>
                 </div>
