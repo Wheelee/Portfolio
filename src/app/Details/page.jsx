@@ -1,13 +1,14 @@
 'use client'
 import { motion } from "framer-motion"
+import Brain from "@/Components/brain"
 
 const DetailsPage = () => {
     return (
         <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
             {/*CONTAINER*/}
-            <div className="">
+            <div className="h-full overflow-scroll lg:flex">
                 {/*TEXT CONTAINER*/}
-                <div className="p-4 sm:p-8 md:p-12 lg:px-20 xl:p-48 pt-6 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
+                <div className="p-4 sm:p-8 md:p-12 lg:px-20 xl:p-48 pt-6 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
                     {/*BIOGRAPHY*/}
                     <div className="flex flex-col gap-12 justify-center">
                         <h1 className="font-bold text-2xl">Biographie</h1>
@@ -41,14 +42,14 @@ const DetailsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-12 justify-center pb-48">
-                        {/*EXPERIENCE*/}
-                        <h1 className="font-bold text-2xl">Expérience</h1>
+                    {/*EXPERIENCE*/}
+                    <div className="flex flex-col  justify-center pb-48">
                         {/*EXPERIENCE LIST*/}
+                        <h1 className="font-bold text-2xl mb-12">Expérience</h1>
+                        {/*EXPERIENCE LIST ITEMS*/}
                         <div className="flex justify-between h-48">
-                            {/*EXPERIENCE LIST ITEMS*/}
+                            {/*LEFT*/}
                             <div className="w-1/3">
-                                {/*LEFT*/}
                                 <div className="">
                                     {/*JOB TITLE*/}
                                     <p className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">Etudiant à La Croix Rouge, Brest</p>
@@ -59,23 +60,78 @@ const DetailsPage = () => {
                                     {/*JOB COMPANY*/}
                                     <p className="p-1 rounded bg-white text-sm font-semibold w-fit">Bilbo's Corp</p>
                                 </div>
+                            </div>
+                            <div className="w-1/6">
                                 {/*CENTER*/}
-                                <div className="w-1/6">
-                                    azeazeaze
+                                <div className="w-1 h-full bg-gray-600 rounded relative">
                                     {/*LINE*/}
-                                    <div className="w-1 h-full bg-gray-600 rounded relative">
+                                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2">
                                         {/*CIRCLE*/}
-                                        <div className="absolute"></div>
                                     </div>
                                 </div>
-                                {/*RIGHT*/}
-                                <div className="w-1/3 bg-blue-800">aeazeazeaze</div>
-                            </div>  
+                            </div>
+                            {/*RIGHT*/}
+                            <div className="w-1/3"></div>
+                        </div>
+                        <div className="flex justify-between h-48">
+                            {/*LEFT*/}
+                            <div className="w-1/3">
+                            </div>
+                            <div className="w-1/6">
+                                {/*CENTER*/}
+                                <div className="w-1 h-full bg-gray-600 rounded relative">
+                                    {/*LINE*/}
+                                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2">
+                                        {/*CIRCLE*/}
+                                    </div>
+                                </div>
+                            </div>
+                            {/*RIGHT*/}
+                            <div className="w-1/3">
+                                <div className="">
+                                    {/*JOB TITLE*/}
+                                    <p className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">Etudiant à La Croix Rouge, Brest</p>
+                                    {/*JOB DESC*/}
+                                    <p className="p-3 text-sm italic">Bah j'étudiais quoi fin normal</p>
+                                    {/*JOB DATE*/}
+                                    <p className="p-3 text-red-400 text-sm font-semibold">2018 - 2023</p>
+                                    {/*JOB COMPANY*/}
+                                    <p className="p-1 rounded bg-white text-sm font-semibold w-fit">Bilbo's Corp</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-between h-48">
+                            {/*LEFT*/}
+                            <div className="w-1/3">
+                                <div className="">
+                                    {/*JOB TITLE*/}
+                                    <p className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg w-fit">Etudiant à La Croix Rouge, Brest</p>
+                                    {/*JOB DESC*/}
+                                    <p className="p-3 text-sm italic">Bah j'étudiais quoi fin normal</p>
+                                    {/*JOB DATE*/}
+                                    <p className="p-3 text-red-400 text-sm font-semibold">2018 - 2023</p>
+                                    {/*JOB COMPANY*/}
+                                    <p className="p-1 rounded bg-white text-sm font-semibold w-fit">Bilbo's Corp</p>
+                                </div>
+                            </div>
+                            <div className="w-1/6">
+                                {/*CENTER*/}
+                                <div className="w-1 h-full bg-gray-600 rounded relative">
+                                    {/*LINE*/}
+                                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2">
+                                        {/*CIRCLE*/}
+                                    </div>
+                                </div>
+                            </div>
+                            {/*RIGHT*/}
+                            <div className="w-1/3"></div>
                         </div>
                     </div>
                 </div>
                 {/*SVG CONTAINER*/}
-                <div className="hidden"></div>
+                <div className="hidden lg:block w-1/3 xl:1/2">
+                    <Brain></Brain>
+                </div>
             </div>
         </motion.div>
     )
