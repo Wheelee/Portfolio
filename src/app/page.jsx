@@ -3,6 +3,7 @@ import Image from "next/image"
 import face from "../../public/hero.png"
 import Type from "@/Components/type"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 const HomePage = () => {
 return (
@@ -25,6 +26,7 @@ return (
         {/*BUTTONS*/}
         <div className=" flex gap-4 w-full">
           <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">Voir mon travail</button>
+          <Link className="p-4 rounded-lg ring-1 ring-black bg-black text-white" href="/Portfolio">ABT</Link>
           <button className="p-4 rounded-lg ring-1 ring-black bg-transparent text-black">Me Contacter</button>
         </div>
       </div>
