@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Type from "@/Components/type2";
 
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
@@ -43,16 +44,16 @@ const ContactPage = () => {
             <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 {/* TEXT CONTAINER */}
                 <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
-                    <div>
+                    <div className="m-12 flex flex-rows items-center cursor-vertical-text">
                         {text.split("").map((letter, index) => (
                             <motion.span
                                 key={index}
                                 initial={{ opacity: 1 }}
                                 animate={{ opacity: 0 }}
                                 transition={{
-                                    duration: 3,
+                                    duration: 5,
                                     repeat: Infinity,
-                                    delay: index * 0.1,
+                                    delay: index * 0.05,
                                 }}
                             >
                                 {letter}
@@ -65,22 +66,22 @@ const ContactPage = () => {
                 <form
                     onSubmit={sendEmail}
                     ref={form}
-                    className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+                    className="h-1/2 lg:h-full lg:w-1/2 bg-black rounded-xl text-xl flex flex-col gap-8 justify-center p-24 ring-black"
                 >
-                    <span>Cher Mr.HONORE,</span>
+                    <span className="text-white">Cher Mr.HONORE,</span>
                     <textarea
                         rows={6}
-                        className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+                        className="border-b-2 border-b-white outline-none resize-none bg-white rounded"
                         name="user_message"
                     />
-                    <span>Adresse e-mail:</span>
+                    <span className="text-white">Adresse e-mail :</span>
                     <input
                         name="user_email"
                         type="text"
-                        className="bg-transparent border-b-2 border-b-black outline-none"
+                        className="bg-transparent border-b-2 border-b-white outline-none"
                     />
-                    <span>En vous remerciant</span>
-                    <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+                    <span className="text-white"><Type></Type></span>
+                    <button className="bg-purple-300 rounded font-semibold text-gray-600 p-4">
                         Envoyer
                     </button>
                     {success && (
