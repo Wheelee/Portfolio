@@ -25,9 +25,8 @@ return (
         </p>
         {/*BUTTONS*/}
         <div className=" flex gap-4 w-full">
-          <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">Voir mon travail</button>
-          <Link className="p-4 rounded-lg ring-1 ring-black bg-black text-white" href="/Portfolio">ABT</Link>
-          <button className="p-4 rounded-lg ring-1 ring-black bg-transparent text-black">Me Contacter</button>
+          <Link className="p-4 rounded-lg ring-1 ring-black bg-black text-white" href="/Portfolio">Voir mon travail</Link>
+          <Link className="p-4 rounded-lg ring-1 ring-black bg-black text-white" href="/Contact">Me Contacter</Link>
         </div>
       </div>
     </div>

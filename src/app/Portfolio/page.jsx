@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import Type from "@/Components/type3";
 
 const items = [
   {
@@ -87,7 +88,7 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Do you have a project?</h1>
+        <h1 className="text-8xl"><Type></Type></h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -111,7 +112,7 @@ const PortfolioPage = () => {
             href="/Contact"
             className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center font-bold"
           >
-            Me contacter
+            Contacter
           </Link>
         </div>
       </div>
