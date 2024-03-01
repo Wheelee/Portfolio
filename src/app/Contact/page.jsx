@@ -68,17 +68,18 @@ const ContactPage = () => {
                     ref={form}
                     className="h-1/2 lg:h-full lg:w-1/2 bg-gray-800 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 ring-black"
                 >
-                    <span className="text-white">Cher Mr.HONORE,</span>
+                    <span className="text-violet-300 text-2xl">Cher Mr.HONORE,</span>
                     <textarea
                         rows={6}
                         className="border-b-2 border-b-white outline-none resize-none bg-white rounded"
                         name="user_message"
+                        placeholder="Je vous contacte afin de..."
                     />
-                    <span className="text-white">Adresse e-mail :</span>
+                    <span className="text-violet-300 text-2xl">Adresse e-mail :</span>
                     <input
                         name="user_email"
                         type="text"
-                        className="bg-transparent border-b-2 border-b-white outline-none"
+                        className="bg-transparent border-b-2 border-b-white outline-none text-white"
                     />
                     <span className="text-white"><Type></Type></span>
                     <button className="bg-purple-300 rounded font-semibold text-black hover:bg-purple-700 hover:text-white p-4">
