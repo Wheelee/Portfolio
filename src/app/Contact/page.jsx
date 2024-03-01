@@ -41,7 +41,7 @@ const ContactPage = () => {
             animate={{ y: "0%" }}
             transition={{ duration: 1 }}
         >
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+            <div className="h-full flex flex-col lg:flex-col items-center px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
                 {/* TEXT CONTAINER */}
                 <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
                     <div className="m-12 flex flex-rows items-center from bg-transparent to bg-black rounded-md ring-4 ring-black font-bold p-2">
@@ -68,14 +68,14 @@ const ContactPage = () => {
                     ref={form}
                     className="h-1/2 lg:h-full lg:w-1/2 bg-gray-800 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 ring-black"
                 >
-                    <span className="text-violet-300 text-2xl">Cher Mr.HONORE,</span>
+                    <span className="text-violet-300 text-2xl font-bold">Cher Mr.HONORE,</span>
                     <textarea
                         rows={6}
                         className="border-b-2 border-b-white outline-none resize-none bg-white rounded"
                         name="user_message"
                         placeholder="Je vous contacte afin de..."
                     />
-                    <span className="text-violet-300 text-2xl">Adresse e-mail :</span>
+                    <span className="text-violet-300 text-2xl font-bold">Adresse e-mail :</span>
                     <input
                         name="user_email"
                         type="text"

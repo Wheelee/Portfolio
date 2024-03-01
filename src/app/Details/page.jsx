@@ -41,11 +41,14 @@ const AboutPage = () => {
                         <h1 className="font-bold text-2xl">Biographie</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg">
-                            Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEb, une discipline que j'affectionne particulièrement
+                            Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEb, une discipline que j'affectionne particulièrement.
+                            Je suis très polyvalent et ma curiosité fait que je m'intérresse à plein de domaines différents tels que l'audiovisuel par la réalisation de clips, de courts métrages ou encore de photomontage.
+                            Le domaine de l'audio également par la production d'instrumentales ou encore de podcast afin de débattre sur différents sujets. 
+                            La formation MMI offre une diversité énorme sur plein de domaine permettant d'être un couteau suisse en manipulant et en ayant des connaissances sur plein de compétences différentes.
                         </p>
                         {/* BIOGRAPHY QUOTE */}
                         <span className="italic">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Le Bilbo sera toujours au dessus de l'eau...
                         </span>
                         {/* BIOGRAPHY SIGN SVG*/}
                         <div className="self-end">
