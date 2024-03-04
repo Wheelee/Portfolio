@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Type from "@/Components/type2";
+import Font from "@/Components/font";
+import { Textarea } from "@nextui-org/react";
+import React from "react";
 
 const ContactPage = () => {
     const [success, setSuccess] = useState(false);
@@ -69,11 +72,16 @@ const ContactPage = () => {
                     className="h-1/2 lg:h-full lg:w-1/2 bg-gray-800 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 ring-black"
                 >
                     <span className="text-violet-300 text-2xl font-bold">Cher Mr.HONORE,</span>
-                    <textarea
-                        rows={6}
-                        className="border-b-2 border-b-white outline-none resize-none bg-white rounded"
-                        name="user_message"
+                    <Textarea
+                        label="Description"
+                        variant="bordered"
                         placeholder="Je vous contacte afin de..."
+                        disableAnimation
+                        disableAutosize
+                        classNames={{
+                            base: "max-w-xs",
+                            input: "resize-y min-h-[40px]",
+                        }}
                     />
                     <span className="text-violet-300 text-2xl font-bold">Adresse e-mail :</span>
                     <input

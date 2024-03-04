@@ -31,19 +31,20 @@ const AboutPage = () => {
                     <div className="flex flex-col gap-12 justify-center">
                         {/* BIOGRAPHY IMAGE */}
                         <Image
-                            src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            alt=""
-                            width={112}
-                            height={112}
-                            className="w-28 h-28 rounded-full object-cover"
+                            isBlurred
+                            width={240}
+                            height={120}
+                            src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+                            alt="NextUI image"
+                            classNames="m-5 rounded-md items-center"
                         />
                         {/* BIOGRAPHY TITLE */}
-                        <h1 className="font-bold text-2xl">Biographie</h1>
+                        <h1 className="font-bold text-2xl text-center">Biographie</h1>
                         {/* BIOGRAPHY DESC */}
-                        <p className="text-lg">
+                        <p className="text-lg text-center">
                             Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEb, une discipline que j'affectionne particulièrement.
                             Je suis très polyvalent et ma curiosité fait que je m'intérresse à plein de domaines différents tels que l'audiovisuel par la réalisation de clips, de courts métrages ou encore de photomontage.
-                            Le domaine de l'audio également par la production d'instrumentales ou encore de podcast afin de débattre sur différents sujets. 
+                            Le domaine de l'audio également par la production d'instrumentales ou encore de podcast afin de débattre sur différents sujets.
                             La formation MMI offre une diversité énorme sur plein de domaine permettant d'être un couteau suisse en manipulant et en ayant des connaissances sur plein de compétences différentes.
                         </p>
                         {/* BIOGRAPHY QUOTE */}

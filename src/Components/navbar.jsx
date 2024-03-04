@@ -100,7 +100,7 @@ const Navbar = () => {
                 <Link href={"https://www.instagram.com/tere_.hnr/"}>
                 <Instagram size={30}/>
                 </Link>
-                <Link href={"https://github.com/Wheelee"}>
+                <Link href={"https://www.linkedin.com/in/teremana-honore-1747032b8"}>
                 <Linkedin size={30}/>
                 </Link>
             </div>

@@ -5,6 +5,7 @@ const nextConfig = {
         {
           protocol: "https",
           hostname: "images.pexels.com",
+          hostname: "nextui-docs-v2.vercel.app"
         },
       ],
     },
