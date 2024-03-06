@@ -34,7 +34,7 @@ const AboutPage = () => {
                             isBlurred
                             width={240}
                             height={120}
-                            src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+                            src="/public/vercel.svg"
                             alt="NextUI image"
                             classNames="m-5 rounded-md items-center"
                         />
