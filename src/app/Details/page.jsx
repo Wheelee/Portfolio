@@ -3,6 +3,7 @@ import Brain from "@/components/brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import React from "react";
 
 const AboutPage = () => {
     const containerRef = useRef();
@@ -31,18 +32,19 @@ const AboutPage = () => {
                     <div className="flex flex-col gap-12 justify-center">
                         {/* BIOGRAPHY IMAGE */}
                         <Image
-                            isBlurred
-                            width={240}
-                            height={120}
-                            src="/public/vercel.svg"
-                            alt="NextUI image"
-                            classNames="m-5 rounded-md items-center"
+                        isBlurred
+                        width={240}
+                        height={240}
+                        src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
+                        alt="NextUI Album Cover"
+                        classNames="m-5"
                         />
+
                         {/* BIOGRAPHY TITLE */}
                         <h1 className="font-bold text-2xl text-center">Biographie</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg text-center">
-                            Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEb, une discipline que j'affectionne particulièrement.
+                            Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEB, une discipline que j'affectionne particulièrement.
                             Je suis très polyvalent et ma curiosité fait que je m'intérresse à plein de domaines différents tels que l'audiovisuel par la réalisation de clips, de courts métrages ou encore de photomontage.
                             Le domaine de l'audio également par la production d'instrumentales ou encore de podcast afin de débattre sur différents sujets.
                             La formation MMI offre une diversité énorme sur plein de domaine permettant d'être un couteau suisse en manipulant et en ayant des connaissances sur plein de compétences différentes.
@@ -97,73 +99,46 @@ const AboutPage = () => {
                                 JavaScript
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                TypeScript
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 React.js
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Next.js
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                SCSS
+                                CSS
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Tailwind CSS
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                MongoDB
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                PostgreSQL
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Node.js
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Nest.js
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Express.js
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Spring Boot
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                GraphQL
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Apollo
-                            </div>
-                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Redux
+                                HTML
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Framer Motion
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Three.js
+                                PHP
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                WebGL
+                                SQL
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Webpack
+                                Java
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Vite
+                                Affinity Photo
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Docker
+                                Affinity Designer
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                AWS
+                                Affinity Publisher
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Firebase
+                                Blender
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                                Git
+                                Canva
                             </div>
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Figma
@@ -219,20 +194,19 @@ const AboutPage = () => {
                                 <div className="w-1/3 ">
                                     {/* JOB TITLE */}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Senior JavaScript Engineer
+                                        Collégien, Libreville
                                     </div>
                                     {/* JOB DESC */}
                                     <div className="p-3 text-sm italic">
-                                        I led web development, offering expertise in JavaScript
-                                        frameworks.{" "}
+                                        En campagne au Gabon, j'ai fait de mon CM2 jusqu'en 5e dans un collège/lycée français.{" "}
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2024 - Present
+                                        2015 - 2018
                                     </div>
                                     {/* JOB COMPANY */}
-                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        Apple
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit text-center">
+                                        Lycée Blaise Pascal
                                     </div>
                                 </div>
                                 {/* CENTER */}
@@ -262,20 +236,19 @@ const AboutPage = () => {
                                 <div className="w-1/3 ">
                                     {/* JOB TITLE */}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Senior React Developer
+                                        Lycéen, Brest
                                     </div>
                                     {/* JOB DESC */}
                                     <div className="p-3 text-sm italic">
-                                        I spearheaded React-based application development,
-                                        leveraging advanced skills.{" "}
+                                        Au retour du Gabon, je suis arrivé en France dans la ville de Brest. J'y ai donc fait la fin de mon collège là-bas avant de faire tout mon lycée également.{" "}
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2019 - 2024{" "}
+                                        2018 - 2023{" "}
                                     </div>
                                     {/* JOB COMPANY */}
                                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                                        Microsoft
+                                        La Croix Rouge
                                     </div>
                                 </div>
                             </div>
@@ -285,16 +258,19 @@ const AboutPage = () => {
                                 <div className="w-1/3 ">
                                     {/* JOB TITLE */}
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                                        Freelancer{" "}
+                                        Etudiant, Laval{" "}
                                     </div>
                                     {/* JOB DESC */}
                                     <div className="p-3 text-sm italic">
-                                        I provided web solutions, applying a range of technologies
-                                        to address client requirements.{" "}
+                                        Après avoir été diplomé, je me suis orienté vers un parcours qui me plaisais. J'ai donc arrêté la filière générale avec les spécialités Maths/Physique pour me diriger dans un domaine plus technique dans le multimédia.{" "}
                                     </div>
                                     {/* JOB DATE */}
                                     <div className="p-3 text-red-400 text-sm font-semibold">
-                                        2010 - 2019{" "}
+                                        2023 - 2026{" "}
+                                    </div>
+                                    {/* JOB COMPANY */}
+                                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                                        IUT Laval, BUT MMI
                                     </div>
                                 </div>
                                 {/* CENTER */}
