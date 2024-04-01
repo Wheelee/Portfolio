@@ -9,7 +9,7 @@ const Type = () => {
             words={['des projets ?', 'des idées ?', 'des demandes ?']}
             loop={false}
             cursor
-            cursorStyle='.'
+            cursorStyle='_'
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={3000}

@@ -4,6 +4,7 @@ import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import React from "react";
+import { Avatar } from "@nextui-org/react";
 
 const AboutPage = () => {
     const containerRef = useRef();
@@ -31,14 +32,7 @@ const AboutPage = () => {
                     {/* BIOGRAPHY CONTAINER */}
                     <div className="flex flex-col gap-12 justify-center">
                         {/* BIOGRAPHY IMAGE */}
-                        <Image
-                        isBlurred
-                        width={240}
-                        height={240}
-                        src="https://nextui-docs-v2.vercel.app/images/album-cover.png"
-                        alt="NextUI Album Cover"
-                        classNames="m-5"
-                        />
+                        <Avatar src="souris.webp" className="w-200 h-200 text-large object-cover grayscale"></Avatar>
 
                         {/* BIOGRAPHY TITLE */}
                         <h1 className="font-bold text-2xl text-center">Biographie</h1>
@@ -51,7 +45,7 @@ const AboutPage = () => {
                         </p>
                         {/* BIOGRAPHY QUOTE */}
                         <span className="italic">
-                            Le Bilbo sera toujours au dessus de l'eau...
+                            Teremana HONORE
                         </span>
 
                         {/* BIOGRAPHY SCROLL SVG */}
