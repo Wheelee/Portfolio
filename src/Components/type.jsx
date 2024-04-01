@@ -6,7 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Type = () => {
     return (
         <span>Future Developper Web <span className="font-bold"><Typewriter
-            words={['Magnifique !', 'Incroyable !', 'Innovant !', 'Sexy !']}
+            words={['Beautiful !', 'Amazing !', 'Incredible !', 'Sexy !']}
             loop={false}
             cursor
             cursorStyle='_'
