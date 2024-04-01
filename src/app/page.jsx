@@ -16,7 +16,7 @@ const HomePage = () => {
         {/*TEXT CONTAINER*/}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center p-10">
           {/*TITLE*/}
-          <h1 className="text-4xl md:text-6xl font-bold">Crafting Digital Experiences, Designing Tomorrow.</h1>
+          <h1 className="text-4xl md:text-6xl font-bold font-crimson-bold ">Crafting Digital Experiences, Designing Tomorrow.</h1>
           {/*DESCRIPTION*/}
           <p className="md:text-xl flex flex-col">
             Bienvenue sur mon portfolio numérique, où convergent innovation et créativité. Avec un sens aigu de l'esthétique et une maîtrise du code, mon portfolio présente une collection variée de projets qui reflètent mon engagement pour l'excellence. Future Developper Web

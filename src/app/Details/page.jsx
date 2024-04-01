@@ -35,7 +35,7 @@ const AboutPage = () => {
                         <Avatar src="souris.webp" className="w-200 h-200 text-large object-cover grayscale"></Avatar>
 
                         {/* BIOGRAPHY TITLE */}
-                        <h1 className="font-bold text-2xl text-center">Biographie</h1>
+                        <h1 className="font-bold text-2xl text-center font-crimson-bold">Biographie</h1>
                         {/* BIOGRAPHY DESC */}
                         <p className="text-lg text-center">
                             Actuelement étudiant en première année en BUT MMI à l'IUT de Laval, je suis un novice dans la découverte du développement WEB, une discipline que j'affectionne particulièrement.
@@ -79,7 +79,7 @@ const AboutPage = () => {
                             initial={{ x: "-300px" }}
                             animate={isSkillRefInView ? { x: 0 } : {}}
                             transition={{ delay: 0.2 }}
-                            className="font-bold text-2xl"
+                            className="font-bold text-2xl font-crimson-bold"
                         >
                             SKILLS
                         </motion.h1>
@@ -172,7 +172,7 @@ const AboutPage = () => {
                             initial={{ x: "-300px" }}
                             animate={isExperienceRefInView ? { x: "0" } : {}}
                             transition={{ delay: 0.2 }}
-                            className="font-bold text-2xl"
+                            className="font-bold text-2xl font-crimson-bold"
                         >
                             EXPERIENCE
                         </motion.h1>

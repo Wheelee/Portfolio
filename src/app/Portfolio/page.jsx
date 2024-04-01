@@ -11,16 +11,16 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Portfolio | SAE 105",
+    desc: "Dans le cadre d'un projet universitaire, j'ai réaliser un site WEB qui n'est autre que mon portfolio afin de présenter mes compétences et aptidudes techniques.",
     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "/Project",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Site WEB",
+    desc: "Vous naviguez sur mon site WEB que j'ai développé à la main dans un projet d'un Book WEB Design. Je l'ai fait en Next Js et axé sur un design assez poétique et sobre.",
     img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "/Project",
   },
@@ -28,14 +28,14 @@ const items = [
     id: 3,
     color: "from-violet-300 to-purple-300",
     title: "Rement",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Rement est une application fictive inventée dans le cadre d'un projet à l'IUT. Elle conciste à vendre des instruments de musique de toutes catégories d'occasion à des prix très alléchant pour les consommateurs afin de permettre l'accès à la musique à la plus grande majorité.",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "/Project",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
+    title: "ODYSSEY",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     link: "/Project",
@@ -56,7 +56,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center drop-shadow-xl">
+        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center drop-shadow-xl font-crimson-bold">
           Experience
         </div>
         <div className="w-screen flex items-center justify-center text-xl text-center font-bold">
@@ -71,13 +71,13 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl font-crimson-bold">
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                    <Image className="rounded-md" src={item.img} alt="" fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] font-crimson-regular">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
@@ -180,7 +180,7 @@ const PortfolioPage = () => {
       <div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl"><Type></Type></h1>
+        <h1 className="text-8xl font-crimson-regular"><Type></Type></h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
@@ -195,7 +195,7 @@ const PortfolioPage = () => {
               />
             </defs>
             <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl font-bold">
+              <textPath xlinkHref="#circlePath" className="text-xl font-bold font-crimson-regular">
                 Front-end Developer and UI Designer
               </textPath>
             </text>
