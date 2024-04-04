@@ -21,7 +21,7 @@ const ProjectCard = () => {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
+      <div className="text-black rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">Super Nova</h5>
         <p className="text-[#ADB7BE]">Description de Super Nova</p>
       </div>

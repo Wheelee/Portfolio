@@ -11,7 +11,7 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Portfolio | SAE 105",
+    title: "Portfolio",
     desc: "Dans le cadre d'un projet universitaire, j'ai réaliser un site WEB qui n'est autre que mon portfolio afin de présenter mes compétences et aptidudes techniques.",
     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "/Project",
