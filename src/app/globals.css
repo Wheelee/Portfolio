@@ -10,7 +10,3 @@
     font-family: "Crimson-Regular";
     src: url("font/Crimson-Regular.woff") format('woff');
 }
-@font-face {
-    font-family: "Crimson-Bold";
-    src: url("font/Crimson-Bold.woff") format('woff');
-}

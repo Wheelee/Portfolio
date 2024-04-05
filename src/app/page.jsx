@@ -10,8 +10,8 @@ const HomePage = () => {
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/*IMAGE CONTAINER*/}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src={face} alt="Visage en art" className="object-contain -z-10" />
+        <div className="h-1/2 lg:h-full lg:w-1/2 ">
+          <Image src={face} alt="Visage en art" className="object-contain" />
         </div>
         {/*TEXT CONTAINER*/}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center p-10">
