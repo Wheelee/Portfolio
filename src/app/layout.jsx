@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import BreadCrumbs from "@/Components/breadcrumbs";
-import TransitionProvider from "@/Components/transitionProvider";
+import TransitionProvider from "../Components/transitionProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image"
 import face from "../../public/hero.png"
-import Type from "@/Components/type"
+import type from "../Components/type"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
@@ -20,7 +20,7 @@ const HomePage = () => {
           {/*DESCRIPTION*/}
           <p className="md:text-xl flex flex-col">
             Bienvenue sur mon portfolio numérique, où convergent innovation et créativité. Avec un sens aigu de l'esthétique et une maîtrise du code, mon portfolio présente une collection variée de projets qui reflètent mon engagement pour l'excellence. Future Developper Web
-            <Type />
+            <type />
           </p>
           {/*BUTTONS*/}
           <div className=" flex gap-4 w-full">

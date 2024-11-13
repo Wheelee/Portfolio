@@ -2,9 +2,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Type from "@/Components/type2";
-import Font from "@/Components/font";
-import { Textarea } from "@nextui-org/react";
+import Type from "../../Components/type2";
 import React from "react";
 
 const ContactPage = () => {

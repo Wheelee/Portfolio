@@ -3,7 +3,7 @@
 import React from 'react'
 import { Typewriter } from 'react-simple-typewriter'
 
-const Type = () => {
+export default function type() {
     return (
         <span>Future Developper Web <span className="font-bold"><Typewriter
             words={['Magnifique !', 'Incroyable !', 'Innovant !', 'Sexy !']}
@@ -16,5 +16,3 @@ const Type = () => {
         /></span></span>
     )
 }
-
-export default Type
